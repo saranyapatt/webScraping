@@ -20,7 +20,8 @@ A collection of web scraping projects developed to practice data extraction, aut
 
 ## 🛠️ Tech Stack
 * **Language:** Python
-* **Libraries:** * `BeautifulSoup4`: For parsing HTML content.
+* **Libraries:**
+    * `BeautifulSoup4`: For parsing HTML content.
     * `Selenium`: For handling dynamic elements (if applicable).
     * `Pandas`: For data structuring and exporting to CSV/Excel.
     * `Requests`: For making HTTP connections.
