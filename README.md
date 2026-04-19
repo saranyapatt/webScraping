@@ -24,14 +24,3 @@ A collection of web scraping projects developed to practice data extraction, aut
     * `Selenium`: For handling dynamic elements (if applicable).
     * `Pandas`: For data structuring and exporting to CSV/Excel.
     * `Requests`: For making HTTP connections.
-
-## 📈 Data Science Workflow
-This project is part of my Data Science & AI learning path. Web scraping is the first step in my workflow:
-1.  **Data Collection:** Extracting raw data from web sources.
-2.  **Data Cleaning:** Using **Pandas** to handle missing values and formatting prices.
-3.  **Analysis:** Preparing datasets for Machine Learning models (e.g., Price Prediction).
-
-## 🚀 How to Run
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/saranyapatt/webScraping.git](https://github.com/saranyapatt/webScraping.git)
