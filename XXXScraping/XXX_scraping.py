@@ -7,16 +7,19 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+import os
+from dotenv import load_dotenv
 
 if __name__ == '__main__':
+    load_dotenv()
     data = []
     chrome_options = Options()
     driver = webdriver.Chrome(options=chrome_options)
-    driver.get("https://www.lotuss.com/th")
+    driver.get(os.getenv("WEB_URL"))
     wait = WebDriverWait(driver, 3)
     search_input = wait.until(EC.element_to_be_clickable((By.ID, "search-bar-input")))
     search_input.click()
-    search_input.send_keys("น้ำดื่มตราสิงห์")
+    search_input.send_keys(os.getenv("PRODUCT"))
     search_input.send_keys(Keys.ENTER)
     wait = WebDriverWait(driver, 3)
     wait.until(EC.element_to_be_clickable((By.ID, "product-list")))
@@ -34,4 +37,4 @@ if __name__ == '__main__':
                 'ราคา': j.text}
         data.append(temp)
     df = pd.DataFrame(data)
-    df.to_excel("lotus.xlsx", index=False)
+    df.to_excel("XXX.xlsx", index=False)
