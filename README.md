@@ -4,8 +4,8 @@ A collection of web scraping projects developed to practice data extraction, aut
 
 ## 📂 Projects in this Repository
 
-### 1. Lotus's Product Scraper (`/lotusScraping`)
-* **Target:** Real-world E-commerce website (Lotus's Thailand).
+### 1. XXX's Product Scraper (`/XXXScraping`)
+* **Target:** Real-world E-commerce website (XXX).
 * **Goal:** Extract product information including names and prices.
 * **Tools:** Python, Selenium / BeautifulSoup.
 * **Key Challenge:** Handling dynamic content and real-world web structures that require robust CSS selector targeting.
